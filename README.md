@@ -1,30 +1,45 @@
 
 
-# LECCIÓN 5 BUENAS PRÁCTICAS DE PROGRAMACIÓN MASTER PYTHON
+# Tkinter/Pytube Youtube Downloader App
 
-_Actividad Práctica de la Lección 5 de BPP, en la que he añadido a GITHUB todas las actividades que hemos realizado a lo largo de la asignatura, relaizando diferentes commits_
+This is a simple desktop application that allows users to download videos from YouTube by entering a valid YouTube URL. The application is built using the Tkinter GUI toolkit and the Pytube library. It provides an easy-to-use interface for downloading multiple videos.
 
 
-### Pre-requisitos 📋
+### Requirements 📋
 
-Se encuntran todos en el archivo _requirements.txt_
+ - Python 3.8 or later
+ - Pytube 11.0.2 or later 
+
+_requirements.txt_
 
 ```
 pip install -r requirements.txt
 ```
 
-### Ejecución 🔧
+### Installation 🔧
 
-_El ejercicio principal de la lección 1, que sirve de base para la actividad 2 y 3 se encuentra dentro de la carpeta Leccion_1_2_3 y se debe ejecutar el archivo finanzas.py_
+1.- Clone the repository or download the ZIP file and extract it.
+2.- Install the required libraries: pip install -r requirements.txt
+3.- Run the application: python main.py
 
-```
-python finanzas.py
-```
+### Usage 🔧
 
-_El Ejercicio Número 2 consiste en el testeo de la actividad 1, en el README de la Lección_1_2_3 puede encontrar toda la infación, y en cuanto a la actividad número 3, se encuentra igualmente ubicada y documentada_
+Enter a valid YouTube URL in the text field (https://www.youtube.com/... or https://youtube.com/...)
+Click the "Add URL" button to add the URL to the list.
+Repeat step 1 and 2 to add multiple URLs to the list.
+Click the "Remove Last" button to remove the last URL from the list.
+Click the "Remove Selected" button to remove the selected URL from the list.
+Click the "Remove All" button to remove all URLs from the list.
+Click the "Download Videos" button to start downloading the videos.
+Select a directory to save the videos.
+Wait for the downloads to complete.
 
-_Todo lo relacionado con el ejercicio de la actividad 4 se encuentra dentro de la carpeta Leccion_4_
+### Features 🔧
 
+Add multiple YouTube URLs to a list for downloading.
+Remove URLs from the list.
+Download multiple videos simultaneously.
+Simple and easy-to-use interface.
 
 ## Autor ✒️
 
