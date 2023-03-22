@@ -18,14 +18,13 @@ pip install -r requirements.txt
 
 ### Installation 🔧
 
-1.- Clone the repository or download the ZIP file and extract it.
-2.- Install the required libraries: pip install -r requirements.txt
-3.- Run the application: python main.py
+1- Clone the repository or download the ZIP file and extract it.
+2- Install the required libraries: pip install -r requirements.txt
+3- Run the application: python main.py
 
 ### Usage 🔧
 
-Enter a valid YouTube URL in the text field (https://www.youtube.com/... or https://youtube.com/...)
-Click the "Add URL" button to add the URL to the list.
+Enter a valid YouTube URL in the text field (https://www.youtube.com/... or https://youtube.com/...).Click the "Add URL" button to add the URL to the list.
 Repeat step 1 and 2 to add multiple URLs to the list.
 Click the "Remove Last" button to remove the last URL from the list.
 Click the "Remove Selected" button to remove the selected URL from the list.
