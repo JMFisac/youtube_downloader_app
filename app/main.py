@@ -122,7 +122,7 @@ class UI(tk.Frame):
             directory = askdirectory()
             for i,url in enumerate(self.urls_list.get(0,tk.END)):
                 self.urls_list.delete(i)
-                self.urls_list.insert(i,f"Waiting... {url}")
+                self.urls_list.insert(i,f"Waiting... \t 0% \t {url}")
                 new_Thread = Thread(target=self.download_video, args=(directory,url,i))
                 self.download_threads.append(new_Thread)
                 #self.download_video(directory,url,i)
@@ -160,11 +160,11 @@ class UI(tk.Frame):
     
     def update_url_text(self,percentage_of_completion):
         self.urls_list.delete(self.index_downloading)
-        self.urls_list.insert(self.index_downloading,f"Downloading...\t{percentage_of_completion:.0f}% {self.url_downloading}") 
+        self.urls_list.insert(self.index_downloading,f"Downloading... \t {percentage_of_completion:.0f}% \t {self.url_downloading}") 
 
     def on_complete(self,stream, path):
         self.urls_list.delete(self.index_downloading)
-        self.urls_list.insert(self.index_downloading,f"Downloaded 100% {self.url_downloading}") 
+        self.urls_list.insert(self.index_downloading,f"Downloaded \t 100% \t {self.url_downloading}") 
         self.urls_list.itemconfig(self.index_downloading, foreground="green")
         if (self.index_downloading + 1) == len(self.urls_list.get(0,tk.END)):
             sleep(1)
