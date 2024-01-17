@@ -24,7 +24,7 @@ class UI(tk.Frame):
         # url entry text
         self.url_label = tk.Label(self.main_frame,text="Write a Youtube Url: ")
         self.url_label.pack()
-        self.url_label2 = tk.Label(self.main_frame,text="'https://www.youtube.com/...' or 'https://youtube.com/...'")
+        self.url_label2 = tk.Label(self.main_frame,text="'https://www.youtube.com/...' or 'https://youtube.com/... or 'https://youtu.be'")
         self.url_label2.pack()
         
         style = ttk.Style()
@@ -96,7 +96,7 @@ class UI(tk.Frame):
             pass
 
     def valid_URL(self,URL:str):
-        if not (URL.startswith("https://www.youtube.com/") or URL.startswith("https://youtube.com")):
+        if not (URL.startswith("https://www.youtube.com/") or URL.startswith("https://youtube.com") or URL.startswith("https://youtu.be")):
             messagebox.showwarning(title=None, message="A valid YouTube Video URL format is required")
             return False
         return True
